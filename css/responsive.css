@@ -1,19 +1,1 @@
-@media screen and (max-width:480px){
-
-	#bodylogo img{
-		width: 150px
-	}
-
-	input[type="text"] {
-	width:280px;
-	height:24px;
-	margin:20px 0 15px 0;  }
-
-	#leftfoot a li{
-	padding: 0 1px 0 1px;
-	margin: 0 0 0 2px;}
-#rightfoot a li{ 
-	padding: 0 2px 0 1px;
-	margin: 0 2px 0 0;}
-}
 

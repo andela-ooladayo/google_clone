@@ -1,12 +1,12 @@
-
+/*********************************
+			GENERAL
+*********************************/
 body, html {
 font-size: small;
 }
 body {
-	width:100%;
 	background: #fff;
 	color: #222;
-	height: 100%;
 }
 body, li ,span{
 	font-family: arial,sans-serif;}
@@ -19,22 +19,20 @@ a{
  li:hover{	
  	text-decoration: underline;
  }
+ header nav,nav ul,footer,.bodylogo{
+	width:100%;
+ }
+/*********************************
+			HEADER
+*********************************/
 
-header nav{
-	width:100%;
-	
-}
-nav ul{
-	width:100%;
-	/*float:right;*/
-}
 nav ul li{
 	float:right;
 	margin:1.5% 2% 0 0%;
 	display: inline;
 }
 nav li img{
- margin: -2px 0 0 0;
+ 	margin: -2px 0 0 0;
 }
 #navbutton{
 	border: 1px solid #4285f4;
@@ -49,12 +47,16 @@ nav li img{
 	border-radius:2px; 
 	margin-top: -10%;
 }
+/*********************************
+			SECTION
+*********************************/
 .container{
-	display:block;
 	width:95%;
 	text-align:center;
 	padding:14% 2% 8% 2%; 
+	margin:auto 0;
 }
+
 input[type="text"] {
 	width:40%;
 	padding:.25% 1%;
@@ -62,7 +64,6 @@ input[type="text"] {
 	outline: none;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	height: 100%;
 	overflow: hidden;
 	font-size: 2.5ex;
 }
@@ -83,34 +84,68 @@ input[type="text"] {
 	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,.15);
 	box-shadow: 0 1px 0 rgba(0,0,0,.15);
 }
-
+/*********************************
+			FOOTER
+*********************************/
 footer{
 	background-color: #f2f2f2;
 	border-top: 1px solid #e4e4e4;
 	line-height: 45px;
-	width: 100%;
 	margin: 8.6% 0% 0% 0%;
 	position: fixed;
-
+	bottom:0;
 }
-
-#leftfoot{
-	float:left;
+#leftfoot,#rightfoot{
 	display: inline;
+}
+#leftfoot{
+	float:left;	
 }
 #rightfoot{
 	float:right;
-	display: inline;
+}
+#leftfoot a li,#rightfoot a li{
+	float:left; 
+	padding: 0 5px 0 5px; 
 }
 #leftfoot a li{
-	float:left;
-	padding: 0 5px 0 5px;
 	margin: 0 0 0 15px;
 }
 
 #rightfoot a li{ 
-	float:left; 
-	padding: 0 5px 0 5px;
 	margin: 0 15px 0 0;
 }
+@media screen and (max-width:1024px){
+	nav ul li{
+		margin:2% 2% 0% 0%;
+	}
+	input[type="text"] {
+		width:55%;
+		padding:.4% .4%;
+		margin:2% 0 2% 0; 
+	}
+	.refbutton{
+		padding:1% 1%;
+	}
+	#leftfoot a li,#rightfoot a li{
+		text-align: center;
+	}
+}
 
+@media screen and (max-width:480px){
+	nav ul li{
+		margin:7% 2% 35% 0%;
+	}
+	input[type="text"] {
+		width:85%;
+		padding:1% 1%;
+		margin:7% 0 7% 0; 
+	}
+
+	.refbutton{
+		padding:3% 3%;
+	}
+	#leftfoot a li,#rightfoot a li{
+		text-align: center;
+	}
+}

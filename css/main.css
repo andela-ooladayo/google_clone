@@ -1,14 +1,12 @@
-/*********************************
-			GENERAL
-*********************************/
+
 body, html {
 font-size: small;
 }
 body {
 	width:100%;
-	height: 100%;	
 	background: #fff;
 	color: #222;
+	height: 100%;
 }
 body, li ,span{
 	font-family: arial,sans-serif;}
@@ -22,23 +20,21 @@ a{
  	text-decoration: underline;
  }
 
-
-/*********************************
-			HEADER
-*********************************/
-header{
-	margin:0;
-	padding:0;
+header nav{
+	width:100%;
+	
 }
 nav ul{
-	float:right;
+	width:100%;
+	/*float:right;*/
 }
 nav ul li{
-	display: inline-block;
-	margin:10px 30px 0 0;
+	float:right;
+	margin:1.5% 2% 0 0%;
+	display: inline;
 }
 nav li img{
- padding: 0px 0 0 0;
+ margin: -2px 0 0 0;
 }
 #navbutton{
 	border: 1px solid #4285f4;
@@ -51,60 +47,70 @@ nav li img{
 	border:none;
 	height:30px; 
 	border-radius:2px; 
+	margin-top: -10%;
 }
-
-
-/*********************************
-			SECTION
-*********************************/
 .container{
 	display:block;
-	height:50%;
 	width:95%;
 	text-align:center;
-	padding:14% 10px 17% 10px; 
+	padding:14% 2% 8% 2%; 
 }
 input[type="text"] {
 	width:40%;
-	height:24px;
-	margin:20px 0 15px 0;  
+	padding:.25% 1%;
+	margin:1.5% 0 1.3% 0; 
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	height: 100%;
+	overflow: hidden;
+	font-size: 2.5ex;
 }
 .refbutton{
 	background: #f5f5f5;
 	background: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
-	height: 30px;
 	border: 1px solid #dcdcdc;
 	border-color: rgba(0,0,0,0.1);
 	color: #444!important;
-	font-size: 11px;
+	font-size: 1.7ex;
 	font-weight: bold;
-	margin:0 7px 0 7px;
+	margin:0% .5% 0% .5%;
+	padding:.7% .7%;
+}
+.refbutton:hover,#navbutton:hover{
+	border-color: #c6c6c6;
+	color: #222!important;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,.15);
+	box-shadow: 0 1px 0 rgba(0,0,0,.15);
 }
 
-
-/*********************************
-		FOOTER
-*********************************/
 footer{
 	background-color: #f2f2f2;
 	border-top: 1px solid #e4e4e4;
+	line-height: 45px;
+	width: 100%;
+	margin: 8.6% 0% 0% 0%;
+	position: fixed;
+
 }
 
 #leftfoot{
 	float:left;
-	display: inline-block;
+	display: inline;
 }
 #rightfoot{
 	float:right;
-	display: inline-block;
+	display: inline;
 }
 #leftfoot a li{
 	float:left;
 	padding: 0 5px 0 5px;
 	margin: 0 0 0 15px;
 }
+
 #rightfoot a li{ 
 	float:left; 
 	padding: 0 5px 0 5px;
 	margin: 0 15px 0 0;
 }
+

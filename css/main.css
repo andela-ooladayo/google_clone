@@ -1,113 +1,70 @@
-/*********************************
-			GENERAL
-*********************************/
-body, html {
-font-size: small;
-}
-body {
-	width:100%;
-	height: 100%;	
-	background: #fff;
-	color: #222;
-}
-body, li ,span{
-	font-family: arial,sans-serif;}
+<!--The static web page of google.com-->
+<!DOCTYPE html>
+<html>
+	<!--GoogleClone Heading-->
+	<head>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" >
+		<link rel="stylesheet" type="text/css" href="css/main.css" > 
+		<link rel="stylesheet" type="text/css" href="css/responsive.css" > 
+		<meta charset="utf-8">
+	</head>
+	<!--GoogleClone Body-->
+	<body>
+		<!--GoogleClone Header Element-->
+		<header>
+			<!--GoogleClone Navigation Bar-->
+			<nav>
+				<ul>
+					<!--Linkable Lists on GoogleClone Navigation Bar-->
+					<a href="#"><li><button id="navbutton"><span>Sign in</span></button></li></a>
+					<a href="#"><li><img src="navApp.png" alt="navApp"></img></li></a>
+					<a href="#"><li>Images</li></a>
+					<a href="#"><li>Gmail</li></a>
+					<a href="#"><li>+You</li></a>
+				</ul>
+			</nav>
+		</header>
+		<!--GoogleClone Main Body-->
+		<section>
+			<!--GoogleClone Main Body Container-->
+			<div class="container">
+				<!--GoogleClone Main Body Image-->
+				<div id="bodylogo">
+					<img src="logo11w.png" alt="logo11w.png"></img>
+				</div>
+				<!--GoggleClone Main Body Input Field-->
+				<div id="textfield">
+					<input type="text"></input>
+				</div>
+				<!--GoogleClone Main Body Linkable Buttons-->
+				<div>
+					<a><button type="button" class="refbutton">Google Search</button></a>
+					<a><button type="button" class="refbutton">I'm Feeling Lucky</button></a>
+				</div>
+			</div>
+		</section>
+		<!--GoogleClone Footer Bar-->
+		
+		<footer>
 
-a{
-	text-decoration:none;
-	color:black;
- }
-
- li:hover{	
- 	text-decoration: underline;
- }
-
-
-/*********************************
-			HEADER
-*********************************/
-header{
-	margin:0;
-	padding:0;
-}
-nav ul{
-	float:right;
-}
-nav ul li{
-	display: inline-block;
-	margin:10px 30px 0 0;
-}
-nav li img{
- padding: 0px 0 0 0;
-}
-#navbutton{
-	border: 1px solid #4285f4;
-	outline: none;
-	background: #4285f4;
-	background: -webkit-linear-gradient(top,#4387fd,#4683ea);
-	font-size:13px;
-	font-weight:bold;
-	color:white;
-	border:none;
-	height:30px; 
-	border-radius:2px; 
-}
-
-
-/*********************************
-			SECTION
-*********************************/
-.container{
-	display:block;
-	height:50%;
-	width:95%;
-	text-align:center;
-	padding:14% 10px 17% 10px; 
-}
-input[type="text"] {
-	width:40%;
-	height:24px;
-	margin:20px 0 15px 0;  
-	background-image:url("download.png"); 
-	background-position: right;
-}
-.refbutton{
-	background: #f5f5f5;
-	background: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
-	height: 30px;
-	border: 1px solid #dcdcdc;
-	border-color: rgba(0,0,0,0.1);
-	color: #444!important;
-	font-size: 11px;
-	font-weight: bold;
-	margin:0 7px 0 7px;
-}
-
-
-/*********************************
-		FOOTER
-*********************************/
-footer{
-	background-color: #f2f2f2;
-	border-top: 1px solid #e4e4e4;
-	line-height: 45px;
-}
-
-#leftfoot{
-	float:left;
-	display: inline-block;
-}
-#rightfoot{
-	float:right;
-	display: inline-block;
-}
-#leftfoot a li{
-	float:left;
-	padding: 0 5px 0 5px;
-	margin: 0 0 0 15px;
-}
-#rightfoot a li{ 
-	float:left; 
-	padding: 0 5px 0 5px;
-	margin: 0 15px 0 0;
-}
+			<!--GoogleClone Reference Link Lists on the left side-->
+			<div>
+				<ul id="leftfoot">
+					<a href="#"><li>Avertising</li><a>
+					<a href="#"><li>Business</li><a>
+					<a href="#"><li>About</li><a>
+				</ul>
+			</div>
+			<!--GoogleClone Reference Link Lists on the right side-->
+			<div>
+				<ul id="rightfoot">
+					<a href="#"><li>Privacy&Terms</li><a>
+					<a href="#"><li>Settings</li><a>
+					<a href="#"><li>Use Google.com.ng</li><a>
+				</ul>
+			</div>
+		</footer>
+		
+	</body>
+</html>
